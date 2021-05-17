@@ -28,7 +28,6 @@
         <td>{{item.exterior_color}}</td>
         <td>{{item.model_year}}</td>
         <td>
-          <span class="badge bg-primary"></span>
           <span *ngIf="item.new_used === 'New'" class="badge bg-primary">{{item.new_used}}</span>
           <span *ngIf="item.new_used === 'Used'" class="badge bg-secondary">{{item.new_used}}</span>
         </td>
