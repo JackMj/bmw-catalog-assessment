@@ -37,6 +37,9 @@ For comprehensive documentation on Angular-CLI, please see their [docker documen
 
 Directory Structure
 ----------------------------------
+
+please note that each project has its own readme file. this is just an overview of the project
+
 ```
 .
 ├── bmw-catalog-client
