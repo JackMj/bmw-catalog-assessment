@@ -43,7 +43,7 @@ Directory Structure
 ├── src/                       <- source code of the application
 │   └── app/
 │   ................................................................
-├── bmw-catalog-server
+├── bmw-catalog-server <- source code of the application
     └──controllers/
     └──mock-data/
     └──routes/
