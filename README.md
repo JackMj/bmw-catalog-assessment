@@ -44,13 +44,13 @@ Directory Structure
 │   └── app/
 │   ................................................................
 ├── bmw-catalog-server <- source code of the application
-    └──controllers/
-    └──mock-data/
-    └──routes/
-    └──app.js
-    └──README.md
-    ................................................................
-
+│    └──controllers/
+│   └──mock-data/
+│   └──routes/
+│   └──app.js
+│   └──README.md
+│   ................................................................
+│
 ├── docker-compose.yml
 ├── .gitingore
 ├── .README.md

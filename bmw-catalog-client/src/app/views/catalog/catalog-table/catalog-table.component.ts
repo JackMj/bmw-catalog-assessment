@@ -24,7 +24,7 @@ export class CatalogTableComponent implements OnInit {
       if (response.bwm_car_catalog_mock) {
         console.log(response.bwm_car_catalog_mock)
         this.catalog = response.bwm_car_catalog_mock;
-        this.count();
+        this.totalCarsCount();
       }
     }, (error) => {
       this.catalogSubscription.unsubscribe();
@@ -32,7 +32,7 @@ export class CatalogTableComponent implements OnInit {
     })
   }
 
-  private count() {
+  private totalCarsCount() {
     this.totalCount = this.catalog.length;
   }
 
