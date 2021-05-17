@@ -1,0 +1,31 @@
+# # See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# # compiled output
+./bmw-catalog-client/dist
+# /tmp
+# /out-tsc
+# # Only exists if Bazel was run
+# /bazel-out
+
+# # dependencies
+./bmw-catalog-client/node_modules
+./bmw-catalog-server/node_modules
+
+./bmw-catalog-server/.project
+./bmw-catalog-client/.project
+
+./bmw-catalog-server/*.launch
+./bmw-catalog-client/.settings/
+./bmw-catalog-server/.settings/
+# *.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+
+

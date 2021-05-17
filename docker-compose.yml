@@ -1,0 +1,13 @@
+version: '2' # specify docker-compose version
+
+# Define the services/containers to be run
+services:
+  angular: # name of the first service
+    build: bmw-catalog-client # specify the directory of the Dockerfile
+    ports:
+      - "5000:5000" # specify port forewarding
+
+  express: #name of the second service
+    build: bmw-catalog-server # specify the directory of the Dockerfile
+    ports:
+      - "3500:3500" #specify ports forewarding

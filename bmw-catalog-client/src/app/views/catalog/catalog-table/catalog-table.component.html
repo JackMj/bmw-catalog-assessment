@@ -1,0 +1,37 @@
+
+<div class="catalog-table">
+  <br>
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col"><span class="badge bg-secondary">Total {{totalCount}}</span></th>
+        <th scope="col">Model</th>
+        <th scope="col">Make</th>
+        <th scope="col">Doors</th>
+        <th scope="col">Body Type</th>
+        <th scope="col">Fuel Type</th>
+        <th scope="col">Price</th>
+        <th scope="col">Color</th>
+        <th scope="col">Year make</th>
+        <th scope="col">New/Used</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of catalog">
+        <th scope="row">{{item.id}}</th>
+        <td>{{item.model_name}}</td>
+        <td>{{item.make_display}}</td>
+        <td>{{item.model_doors}}</td>
+        <td>{{item.body_type}}</td>
+        <td>{{item.fuel_type}}</td>
+        <td>R{{item.price}}</td>
+        <td>{{item.exterior_color}}</td>
+        <td>{{item.model_year}}</td>
+        <td>
+          <span class="badge bg-primary"></span>
+          <span *ngIf="item.new_used === 'New'" class="badge bg-primary">{{item.new_used}}</span>
+          <span *ngIf="item.new_used === 'Used'" class="badge bg-secondary">{{item.new_used}}</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
